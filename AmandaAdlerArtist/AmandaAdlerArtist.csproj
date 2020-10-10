@@ -326,7 +326,9 @@
     <Compile Include="UmbracoModels\People.generated.cs" />
     <Compile Include="UmbracoModels\Person.generated.cs" />
     <Compile Include="UmbracoModels\Product.generated.cs" />
+    <Compile Include="UmbracoModels\ProductCollection.generated.cs" />
     <Compile Include="UmbracoModels\Products.generated.cs" />
+    <Compile Include="UmbracoModels\Shop.generated.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\FaIconpicker\controllers\faIconPicker.controller.js" />
@@ -359,8 +361,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\umbraco-starterkit-style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\Vintage Avalanche.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -377,6 +381,8 @@
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="App_Plugins\FaIconpicker\package.manifest" />
+    <Content Include="fonts\Vintage Avalanche Black.otf" />
+    <Content Include="fonts\Vintage Avalanche.otf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -410,6 +416,17 @@
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
     <Content Include="Views\MacroPartials\FeaturedProducts.cshtml" />
     <Content Include="Views\MacroPartials\LatestBlogposts.cshtml" />
+    <Content Include="Views\Blog.cshtml" />
+    <Content Include="Views\Blogpost.cshtml" />
+    <Content Include="Views\contact.cshtml" />
+    <Content Include="Views\contentPage.cshtml" />
+    <Content Include="Views\home.cshtml" />
+    <Content Include="Views\master.cshtml" />
+    <Content Include="Views\people.cshtml" />
+    <Content Include="Views\Person.cshtml" />
+    <Content Include="Views\Product.cshtml" />
+    <Content Include="Views\Products.cshtml" />
+    <Content Include="Views\ProductCollection.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

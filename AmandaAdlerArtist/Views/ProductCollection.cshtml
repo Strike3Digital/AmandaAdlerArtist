@@ -1,0 +1,43 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProductCollection>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{ Layout = "master.cshtml"; }
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+<section class="section">
+
+    <div class="container">
+
+        <!-- todo: implement category selector -->
+        <!--
+        <nav class="nav-bar nav-bar--center nav-bar--air-bottom">
+            <a class="nav-link nav-link--black nav-link--active" href="">All</a>
+            <a class="nav-link nav-link--black" href="">Clothing</a>
+            <a class="nav-link nav-link--black" href="">Instruments</a>
+            <a class="nav-link nav-link--black" href="">Accessories</a>
+            <a class="nav-link nav-link--black" href="">Other</a>
+        </nav>
+        -->
+        <div class="product-grid">
+            @foreach (Products products in Model.Children.OfType<Products>())
+            {
+                <a href="@products.Url(Culture)" class="product-grid__item" style="background-image: url('@products.PreviewImage.GetCropUrl("preview")')">
+                    <div class="product-grid__item__name"><h3>@products.Name</h3></div>
+                </a>
+            }
+        </div>
+        <div class="product-grid">
+            @if (Model.FeaturedProducts != null)
+            {
+                foreach (Product product in Model.FeaturedProducts)
+                {
+                <a href="@product.Url(Culture)" class="product-grid__item" style="background-image: url('@product.Photos.Url(Culture)')">
+                    <div class="product-grid__item__overlay">
+                        <div class="product-grid__item__name">@product.ProductName</div>
+                        <div class="product-grid__item__price">@Model.DefaultCurrency @product.Price.ToString("F")</div>
+                    </div>
+                </a>
+                }
+            }
+        </div>
+    </div>
+
+</section>

@@ -612,7 +612,9 @@ Umbraco.Web.PublishedModels.NavigationBase, AmandaAdlerArtist, Version=1.0.0.0, 
 Umbraco.Web.PublishedModels.People, AmandaAdlerArtist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.Person, AmandaAdlerArtist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.Product, AmandaAdlerArtist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.PublishedModels.ProductCollection, AmandaAdlerArtist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.Products, AmandaAdlerArtist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.PublishedModels.Shop, AmandaAdlerArtist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Deploy.IServiceConnector
 

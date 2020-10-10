@@ -27,6 +27,10 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
 		global::System.Collections.Generic.IEnumerable<string> Keywords { get; }
 
+		/// <summary>Preview Image</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent PreviewImage { get; }
+
 		/// <summary>Description</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
 		string SeoMetaDescription { get; }
@@ -71,6 +75,17 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Keywords</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
 		public static global::System.Collections.Generic.IEnumerable<string> GetKeywords(INavigationBase that) => that.Value<global::System.Collections.Generic.IEnumerable<string>>("keywords");
+
+		///<summary>
+		/// Preview Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
+		[ImplementPropertyType("previewImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent PreviewImage => GetPreviewImage(this);
+
+		/// <summary>Static getter for Preview Image</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetPreviewImage(INavigationBase that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("previewImage");
 
 		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
